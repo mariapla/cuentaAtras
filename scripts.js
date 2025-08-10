@@ -1,9 +1,9 @@
 
-let finDieta = new Date('06/21/2023 0:00 AM');
+let vacaciones = new Date('06/21/2026 0:00 AM');
 
 function cuentaAtras()
 {
-    let fechaFinal = new Date(finDieta)
+    let fechaFinal = new Date(vacaciones)
     let fechaActual = new Date()
 
     let segundos = Math.floor((fechaFinal - fechaActual) / 1000)
@@ -22,4 +22,5 @@ function cuentaAtras()
 
 //cuentaAtras()
 // repetir la llamada cada 1000 milisegundos
+
 setInterval(cuentaAtras, 1000)
